@@ -10,7 +10,7 @@ module.exports = {
         
         var spawn = nearest.spawn(creep)
         
-        if (spawn.energy == spawn.energyCapacity) {
+        if (!spawn || spawn.energy == spawn.energyCapacity) {
             return false;
         }
         
