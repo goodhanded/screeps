@@ -6,7 +6,7 @@ module.exports = {
     /** @param {Creep} creep **/
     run: function (creep) {
         
-        if (creep.energy == 0) {
+        if (creep.carry.energy == 0) {
             return false;
         }
         
